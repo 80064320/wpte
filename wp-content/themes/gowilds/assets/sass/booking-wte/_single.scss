@@ -1,0 +1,1353 @@
+body.single-trip{
+   overflow-x: unset;
+}
+.booking-single{
+   margin-bottom: 50px;
+   .entry-header{
+      display: none!important;
+   }
+   .trip-info-one{
+      background: #F2F5F9;
+      padding: 70px 0 65px;
+      @media(max-width: 1024px){
+         padding: 50px 0;
+      }
+      &__content{
+         max-width: 1320px;
+         margin: 0 auto;
+         display: flex;
+         flex-wrap: wrap;
+         > div{
+            padding: 0 15px;
+         }
+      }
+      &__left{
+         flex: 0 0 45%;
+         @media(max-width: 992px){
+            flex: 0 0 100%;
+         }
+      }
+      &__right{
+         flex: 0 0 55%;
+         display: flex;
+         justify-content: flex-end;
+         @media(max-width: 992px){
+            margin-top: 20px;
+            flex: 0 0 100%;
+            justify-content: flex-start;
+         }
+      }
+      .trip-title{
+         color: $headings-color!important;
+         font-size: 26px;
+         margin: 0 0 10px;
+         @media(max-width: 1024px){
+            font-size: 22px;
+            line-height: 28px;
+         }
+      }
+      &__address{
+         display: flex;
+         align-items: center;
+         font-size: 16px;
+         font-weight: 500;
+         i{
+            margin-right: 5px;
+            color: $theme-color;
+         }
+         a{
+            color: $body-color;
+         }
+      }
+   }
+
+   .trip-meta-one{
+      border-bottom: 1px solid $border-color;
+      padding: 25px 0;
+      margin-bottom: 60px;
+      @media(max-width: 480px){
+         padding: 20px 0;
+      }
+      &__content{
+         max-width: 1320px;
+         margin: 0 auto;
+         display: flex;
+         align-items: center;
+         padding: 0 15px;
+         flex-wrap: wrap;
+      }
+      &__left{
+         flex: 0 0 40%;
+         @media(max-width: 510px){
+            flex: 0 0 100%;
+            padding-bottom: 10px;
+         }
+      }
+      &__right{
+         display: flex;
+         flex: 0 0 60%;
+         justify-content: flex-end;
+         align-items: center;
+         gap: 20px;
+         @media(max-width: 510px){
+            flex: 0 0 100%;
+            justify-content: flex-start;
+         }
+         .heateor_sss_sharing_ul{
+            > a{
+               > span{
+                  padding: 8px!important;
+                  background: #F2F5F9!important;
+                  width: 22px!important;
+                  height: 22px!important;
+                  transition: all 0.35s;
+                  svg{
+                     path{
+                        stroke: $body-color!important;
+                        &:not(.heateor_sss_svg_stroke){
+                           fill: $body-color!important;
+                           stroke: none!important;
+                        }
+                     }
+                  }
+               }
+               &:hover{
+                  > span{
+                     background: $theme-color!important;
+                     svg path{
+                        stroke: $white!important;
+                        &:not(.heateor_sss_svg_stroke){
+                           fill: $white!important;
+                           stroke: none!important;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .post-data.cost{
+      display: flex;
+      flex-wrap: wrap;
+      .wpte-cost-tab-title{
+         font-size: 22px;
+         font-weight: 700;
+         flex: 0 0 100%;
+         margin-top: 10px;
+         margin-bottom: 20px;
+         padding-bottom: 15px;
+         position: relative;
+         display: inline-block;
+         &:before{
+            content: '';
+            width: 38px;
+            height: 2px;
+            background: $theme-color-2;
+            position: absolute;
+            border-radius: 50%;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+         }
+      }
+      .content{
+         flex: 0 0 50%;
+         @media(max-width: 992px){
+            flex: 0 0 100%;
+         }
+         h3{
+            margin: 0 0 15px;
+            font-size: 17px;
+            font-weight: 500;
+         }
+         #include-result, #exclude-result{
+            margin-bottom: 10px; 
+            font-size: 15px;
+            li{
+               font-size: 15px;
+               font-weight: 500;
+               &:before{
+                  top: 1px;
+               }
+            }
+         }
+      }
+   }
+   .entry-footer{
+      .edit-link{
+         display: none!important;
+      }
+   }
+
+   // Comment
+   .tour-comment{
+      .comments-title{
+         padding-top: 0!important;
+      }
+      .comment-respond{
+         padding-top: 0!important;
+      }
+   }
+} 
+
+.single-trip{
+   .trip-content-area{
+      @media (max-width: 1024px){
+         max-width: 960px;
+      }
+   }
+}
+
+.booking-single{
+   #wp-travel-trip-wrapper{
+      #secondary{
+         .widget-title{
+            font-size: 22px;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            &:after{
+               content: '';
+               position: absolute;
+               left: 0;
+               bottom: 0;
+               width: 36px;
+               height: 2px;
+               background: $theme-color;
+            }
+         }
+         .secondary-trip-info{
+            border: 1px solid $border-color;
+            border-radius: 10px;
+            padding: 30px;
+            @media(max-width: 1024px){
+               padding: 20px 15px;
+            }
+            .trip-facts-value{
+               margin: 0 -16px -16px;
+               li{
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+               }
+            }
+         }
+      }
+   }
+}
+
+// Gallery
+.booking-single-gallery{
+   position: relative;
+   .wpte-gallery-container{
+      background: $theme-color;
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px 10px 0 0;
+      z-index: 19;
+      display: flex;
+      justify-content: flex-end;
+      width: 88px;
+      padding: 0;
+      > span{
+         border-left: 1px solid rgba(255, 255, 255, 0.2);
+         flex: 0 0 50%;
+         &:first-child{
+            border-left: 0;
+         }
+      }
+      .wp-travel-engine-image-gal-popup{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 5px 5px 2px;
+         .wte-trip-image-gal-popup-trigger{
+            position: relative;
+            font-size: 0;
+            color: transparent;
+            &:after{
+               content: '\f030';
+               font-family: 'Line Awesome Free' !important;
+               color: $white;
+               font-size: 20px;
+               line-height: 26px;
+               font-weight: 900;
+            }
+            span{
+               display: inline-block;
+               background: $theme-color-2;
+               color: $white;
+               width: 14px;
+               height: 14px;
+               border-radius: 50%;
+               line-height: 1;
+               font-size: 11px;
+               line-height: 14px;
+               position: absolute;
+               text-align: center;
+               right: -8px;
+               top: 0px;
+            }
+         }
+      }
+      .wp-travel-engine-vid-gal-popup{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 5px 5px 2px;;
+         .wte-trip-vidgal-popup-trigger{
+            position: relative;
+            font-size: 0;
+            color: transparent;
+            &:after{
+               content: '\f03d';
+               font-family: 'Line Awesome Free' !important;
+               font-size: 20px;
+               line-height: 26px;
+               font-weight: 900;
+               color: #fff;
+               mask: none!important;
+            }
+         }
+      }
+   }
+}
+
+
+.booking-single{
+   background: $white;
+   color: $body-color;
+   line-height: 1.8;
+   .wpte-gallery-wrapper__multi-banners{
+      margin-bottom: 0;
+   }
+   .booking-info{
+      background: #F2F5F9;
+      padding: 80px 0;
+      @media(max-width: 1024px){
+         padding: 50px 0;
+      }
+      &__content{
+         max-width: 1200px;
+         margin: 0 auto;
+         display: flex;
+         flex-wrap: wrap;
+         > div{
+            padding: 0 15px;
+         }
+      }
+      &__left{
+         flex: 0 0 45%;
+         @media(max-width: 767px){
+            flex: 0 0 100%;
+         }
+      }
+      &__right{
+         flex: 0 0 55%;
+         display: flex;
+         justify-content: flex-end;
+         @media(max-width: 767px){
+            margin-top: 20px;
+            flex: 0 0 100%;
+            justify-content: flex-start;
+         }
+      }
+   }
+   .booking-info-block{
+      display: flex;
+      align-items: center;
+      .icon{
+         color: $theme-color;
+         font-size: 30px;
+         margin-right: 15px;
+      }
+      .meta-title{
+         color: $body-color;
+         font-size: 14px;
+         font-weight: 500;
+         margin: 0;
+      }
+      .item-value{
+         font-size: 15px;
+         font-weight: 600;
+         color: $link-color;
+         line-height: 22px;
+      }
+   }
+   .booking-single__rating{
+      i{
+         color: $theme-color;
+      }
+   }
+   .booking-meta{
+      border-bottom: 1px solid $border-color;
+      padding: 30px 0;
+      margin-bottom: 60px;
+      @media(max-width: 480px){
+         padding: 20px 0;
+      }
+      &__content{
+         max-width: 1200px;
+         margin: 0 auto;
+         display: flex;
+         align-items: center;
+         padding: 0 15px;
+         flex-wrap: wrap;
+      }
+      &__left{
+         flex: 0 0 40%;
+         min-height: 30px;
+         @media(max-width: 480px){
+            flex: 0 0 100%;
+         }
+      }
+      &__right{
+         display: flex;
+         flex: 0 0 60%;
+         justify-content: flex-end;
+         align-items: center;
+         gap: 20px;
+         @media(max-width: 480px){
+            flex: 0 0 100%;
+            justify-content: flex-start;
+         }
+      }
+   }
+   .secondary-trip-info{
+      margin-top: 20px;
+      .wte-trip-facts{
+         padding: 0;
+         border-radius: 0;
+         box-shadow: none;
+         border: none;
+         .widget-title{
+            font-size: 18px;
+            display: inline-block;
+            padding: 6px 20px;
+            background: $white;
+            border: 1px solid $border-color;
+            position: relative;
+            margin: 0;
+            bottom: -18px;
+            left: 30px;
+            border-radius: 8px;
+         }
+         .trip-facts-value{
+            border: 1px solid $border-color;
+            border-radius: 10px;
+            padding: 45px 25px 30px;
+            //background: #F7F9FC;
+            background: $bg-gray;
+            margin: 0;
+            @media(max-width: 1024px){
+               padding: 20px 15px;
+            }
+            > li{
+               padding-left: 55px;
+               padding-right: 8px;
+               position: relative;
+               margin: 12px 0;
+               flex: 0 0 33.33%;
+               .icon-holder{
+                  width: 45px;
+                  height: 45px;
+                  //border: 1px solid rgba(0, 0, 0, 0.06);
+                  background: $white;
+                  color: $theme-color;
+                  border-radius: 6px;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  font-size: 18px;
+                  top: 0;
+                  left: 0;
+                  z-index: 1;
+               }
+               label{
+                  color: $headings-color;
+                  font-size: 15px;
+               }
+               .value{
+                  color: $body-color;
+                  font-weight: 500;
+                  font-size: 15px;
+                  a{
+                     color: $body-color;
+                     font-size: 15px;
+                     &:hover{
+                        color: $theme-color;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   .wpte-tabs-container{
+      box-shadow: none;
+      margin-top: 50px;
+      .nav-tab-wrapper{
+         padding: 0;
+         .tab-inner-wrapper{
+            overflow: visible;
+         }
+         .tab-anchor-wrapper{
+            .nav-tab{
+               padding: 10px 10px 18px;
+               border: none;
+               position: relative;
+               font-weight: 500;
+               flex-direction: row;
+               justify-content: center;
+               align-items: center;
+               color: $body-color;
+               .tab-icon{
+                  margin: 0 3px 0 0;
+               }
+               &:after{
+                  content: '';
+                  width: 0%;
+                  height: 2px;
+                  background: $theme-color;
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  margin-top: -1px;
+                  z-index: 1;
+                  opacity: 0;
+                  transition: all 0.35s;
+               }
+               &.nav-tab-active{
+                  color: $headings-color;
+               }
+               &.nav-tab-active, &:hover{
+                  &:after{
+                     width: 100%;
+                     opacity: 1;
+                  }
+               }
+            }
+            .nb-configurations{
+               padding: 32px 0;
+            }
+         }
+      }
+      .tab-content, .tab-inner-wrapper{
+         .nb-configurations{
+            padding: 30px 0 10px!important;
+            border: none!important;
+            h2[class*=wpte], .wte-fsd-list-header h2, .trip-review-title{
+               font-size: 22px;
+               font-weight: 700;
+               font-family: $headings-font-family;
+               position: relative;
+               margin-bottom: 15px;
+               padding-bottom: 15px;
+               &:before{
+                  content: '';
+                  width: 38px;
+                  height: 2px;
+                  background: $theme-color-2;
+                  position: absolute;
+                  border-radius: 50%;
+                  left: 0;
+                  bottom: 0;
+                  z-index: 1;
+               }
+            }
+
+            // Highlights
+            .wpte-trip-highlights-title{
+               margin: 0!important;
+               padding: 5px 10px;
+               background: $white;
+               position: relative;
+               bottom: -16px;
+               left: 30px;
+               font-size: 15px;
+               font-weight: 600;
+               display: inline-block;
+               border: 1px solid $border-color;
+            }
+            .wpte-trip-highlights{
+               background: #eef5eb;
+               padding: 35px 30px 25px!important;
+               color: $headings-color;
+               font-size: 15px;
+               @media(max-width: 1024px){
+                  padding: 30px 15px 20px!important;
+               }
+               > li{
+                  &:before{
+                     background-color: $theme-color-2;
+                     font-size: 14px;
+                     top: 1px;
+                  }
+               }
+            }
+          
+            // Itinerary
+            .wte-itinerary-header-wrapper{
+               .wp-travel-engine-itinerary-header{
+                  margin: 0 0 20px;
+               }
+            }
+            .itinerary{
+               font-size: 15px;
+               .itinerary-row{
+                  padding: 0 0 18px !important;
+                  margin: 0 0 18px 45px !important;
+                  &:last-child{
+                     margin-bottom: 0!important;
+                  }
+                  .wte-itinerary-head-wrap{
+                     .title{
+                        &:before{
+                           top: 17px;
+                        }
+                     }
+                     .title, .itinerary-title{
+                        font-weight: 600!important;
+                        font-size: 16px!important;
+                        line-height: 22px;
+                     }
+                  }
+                  .itinerary-content{
+                     .wp-block-quote{
+                        background: #eef5eb;
+                        padding: 18px 30px 25px!important;
+                        color: $headings-color;
+                        border: none!important;
+                        font-style: normal;
+                        font-size: 13px;
+                        line-height: 28px;
+                        font-family: $font-family-base;
+                        @media(max-width: 992px){
+                           padding: 15px 12px 20px!important;
+                        }
+                        p{
+                           line-height: 28px!important;
+                        }
+                        &:before{
+                           display: none!important;
+                        }
+                        cite{
+                           &:before{
+                              background: $theme-color-2;
+                           }
+                        }
+                     }
+                     .wp-block-list{
+                        color: $headings-color;
+                     }
+                  }
+               }
+            }
+
+            //FAQ
+            .wp-travel-engine-faq-tab-header{
+               margin-bottom: 20px;
+            }
+            .wp-travel-engine-faq-tab-content{
+               .faq-row{
+                  padding: 16px 15px;
+                  .accordion-tabs-toggle{
+                     font-size: 16px;
+                     font-weight: 600;
+                  }
+               }
+            }
+         }
+      }
+      &.fixed-header{
+         .nav-tab-wrapper .tab-anchor-wrapper .nav-tab{
+            padding: 20px 10px 22px;
+         }
+      }
+      
+   }
+
+   .booking-share{
+      .share-toggle{
+         background: $bg-gray;
+         padding: 6px 25px;
+         border-radius: 30px;
+         font-weight: 600;
+         i{
+            margin-right: 6px;
+         }
+      }
+   }
+   .booking-content{
+
+   }
+   .booking-overview{
+      margin-bottom: 30px;
+   }
+   .booking-highlights{
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      .content-inner{
+         display: flex;
+         flex-wrap: wrap;
+      }
+      .box-icon{
+         flex: 0 0 138px;
+         @media(max-width: 400px){
+            flex: 0 0 100%;
+            img{
+               max-height: 100px;
+            }
+         }
+      }
+      .box-content{
+         flex: 0 0 calc(100% - 138px);
+         @media(max-width: 400px){
+            flex: 0 0 100%;
+         }
+      }
+   }
+   .booking-include-exclude{
+      padding-bottom: 40px;
+      border-bottom: 1px solid #DFDFDF;
+   }
+   .booking-features{
+      .booking-widget__content{
+         display: block;
+      }
+   }
+}
+
+// Enquiry Form
+.booking-single{
+   #modal-trip-send-enquiry-mess{
+      .modal-title{
+         margin: 0;
+      }
+      .modal-trip-close{
+         padding: 6px 10px 15px;
+         line-height: 12px;
+         font-size: 22px;
+         background: $theme-color-2;
+         color: $white;
+         border-radius: 6px;
+         box-shadow: none;
+         border: none;
+         transition: all 0.35s;
+         &:hover{
+            background: $theme-color;
+         }
+      }
+   }
+   .wte_enquiry_contact_form-wrap{
+      #wte_enquiry_contact_form{
+         box-shadow: none;
+         padding: 0 10px;
+         .enquiry-form-title{
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 18px;
+         }
+         .package-name-holder{
+            margin-bottom: 15px;
+         }
+         .row-repeater{
+            margin: 0 0 20px;
+            label{
+               font-size: 14px;
+               font-weight: 600;
+               color: $headings-color;
+            }
+         }
+      }
+   }
+}
+
+// Booking Form
+.booking-single{
+   .wpte-booking-area-wrapper{
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      background: url('#{$image-theme-path-base}plane.png') no-repeat top right #fff;
+      top: 0;
+      transition: all 0.8s;
+      .wpte-bf-discount-tag{
+         background: $theme-color-2;
+         color: $white;
+         margin-bottom: 18px!important;
+      }
+      .wpte-bf-price-wrap{
+         .wpte-bf-price{
+            margin-bottom: 20px!important;
+            .wpte-bf-reg-price{
+               .wpte-bf-price-from{
+                  font-size: 15px;
+               }
+               del{
+                  color: $body-color;
+                  font-size: 15px;
+               }
+            }
+            .wpte-bf-offer-amount{
+               font-size: 26px;
+               color: $headings-color;
+            }
+            .wpte-bf-pqty{
+               font-weight: 500;
+               color: $body-color;
+               opacity: 1;
+            }
+         }
+      }
+      .wpte-bf-btn-wrap{
+         padding-top: 5px!important;
+         padding-bottom: 18px!important;
+      }
+      .wpte-booking-footer-text{
+         margin-top: 0;
+         padding: 20px 15px;
+         background: #0104FF;
+         color: rgba(255, 255, 255, 0.9);
+         font-size: 15px;
+         font-weight: 600;
+         @media(max-width: 1024px){
+            padding: 18px 10px;
+         }
+         a{
+            color: $white;
+            text-decoration: underline;
+            white-space: nowrap;
+            &:hover{
+               color: $theme-color;
+            }
+         }
+         @media(max-width: 1024px){
+            padding: 15px 10px!important;
+         }
+      }
+   }
+}
+
+.booking-information{
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   @media(max-width: 1200px){
+      gap: 20px;
+   }
+   @media(max-width: 1024px){
+      gap: 15px;
+   }
+   @media(max-width: 767px){
+      display: block;
+   }
+}
+
+// Gallery
+.booking-gallery-one{
+   position: relative;
+   &__media{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 9;
+      display: flex;
+      padding: 10px 20px 8px;
+      gap: 18px;
+      a{
+         color: $white;
+         line-height: 1;
+         i{
+            font-size: 20px;
+         }
+         &:hover{
+            color: $theme-color;
+         }
+      }
+      .tf-gallery-box{
+         position: relative;
+         span{
+            background: $theme-color;
+            color: $white;
+            font-size: 12px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            top: -3px;
+            right: -8px;
+         }
+      }
+   }
+}
+
+.booking-price-one{
+   border: 1px solid $border-color;
+   box-shadow: none;
+   background: $white;
+   padding: 20px 30px 30px;
+   margin-bottom: 30px;
+   font-weight: 400;
+   .tf-short-info{
+      li{
+         i{
+            font-size: 16px;
+         }
+      }
+   }
+   .tf-trip-person-info{
+      margin-top: 20px;
+      ul{
+         margin-bottom: 0;
+         gap: 10px;
+      }
+      .person-info{
+         display: flex;
+         flex-direction: row;
+         padding: 5px 12px;
+         width: auto;
+         height: auto;
+         position: relative;
+         background: $white;
+         border-radius: 0;
+         border: 1px solid $border-color;
+         border-bottom: 0;
+         font-weight: 500;
+         @media(max-width: 350px){
+            flex: 0 0 100%;
+         }
+         &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 1px;
+            background: $bg-gray;
+            z-index: 11;
+            opacity: 0;
+         }
+         &.active{
+            background: $bg-gray;
+            border-color: $border-color;
+            &:after{
+               opacity: 1;
+            }
+         }
+      }
+   }
+}
+
+
+.gva-listing-comment{
+   .the-comment{
+      .comment-rating-ul{ 
+         display: flex;
+         flex-wrap: wrap;
+         margin: 10px 0 10px;
+         list-style: none;
+         padding: 0;
+         > li{
+            margin-right: 30px;
+            margin-bottom: 10px;
+            &:last-child{
+               margin-right: 0;
+            }
+            > span{
+               display: block;
+               font-size: 15px;
+               font-weight: 500;
+               line-height: 24px;
+               &.comment-rating-stars{
+                  font-size: 12px;
+                  letter-spacing: -2px;
+                  color: $rating-color;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+// Banner
+@media (min-width: 1025px) {
+    .wpte-gallery-wrapper__multi-banners .banner-layout-default .splide.single-trip-main-carousel img {
+        height: 550px;
+    }
+}
+.wpte-gallery-wrapper{
+   &.banner-layout-1, &.banner-layout-6{
+      &:after{
+         background: $bg-gray;
+      }
+      .single-trip-main-carousel img{
+         height: 550px;
+         @media(max-width: 1024px){
+            height: 450px;
+         }
+         @media(max-width: 992px){
+            height: 400px;
+         }
+         @media(max-width: 768px){
+            height: 320px;
+         }
+      }
+   }
+}
+
+
+.booking-single{
+   .banner-layout-2__wrap, .banner-layout-3__wrap, .banner-layout-4__wrap{
+      padding: 10px 0 60px;
+      @media(max-width: 768px){
+         padding: 10px 0 35px;
+      }
+      .trip-content-area{
+         padding: 0;
+      }
+      .wpte-gallery-wrapper{
+         max-width: 1320px;
+         margin: 0 auto;
+         padding: 0 15px;
+      }
+      .wpte-gallery-container{
+         right: 15px;
+         padding: 15px;
+      }
+      .wp-travel-engine-image-gal-popup{
+         margin-right: 6px;
+         .wte-trip-image-gal-popup-trigger{
+            font-size: 0;
+            color: transparent;
+            background: $theme-color-2;
+            &:before{
+               display: none;
+            }
+            &:after{
+               content: '\f030';
+               font-family: 'Line Awesome Free' !important;
+               color: $white;
+               font-size: 20px;
+               line-height: 26px;
+               font-weight: 900;
+               mask: none!important;
+            }
+            &:hover, &:focus{
+               background: $theme-color;
+            }
+         }
+      }
+      .wp-travel-engine-vid-gal-popup{
+         .wte-trip-vidgal-popup-trigger{
+            font-size: 0;
+            color: transparent;
+            background: $theme-color-2;
+            &:before{
+               display: none;
+            }
+            &:after{
+               content: '\f03d';
+               font-family: 'Line Awesome Free' !important;
+               font-size: 20px;
+               line-height: 26px;
+               font-weight: 900;
+               color: #fff;
+               mask: none!important;
+            }
+            &:hover, &:focus{
+               background: $theme-color;
+            }
+         }
+      }
+   }
+}
+
+.wpte-gallery-wrapper{
+   &.banner-layout-1, &.banner-layout-default{
+      .wp-travel-engine-image-gal-popup{
+         margin-right: 6px;
+         .wte-trip-image-gal-popup-trigger{
+            font-size: 0;
+            color: transparent;
+            background: $theme-color-2;
+            &:before{
+               display: none;
+            }
+            &:after{
+               content: '\f030';
+               font-family: 'Line Awesome Free' !important;
+               color: $white;
+               font-size: 20px;
+               line-height: 26px;
+               font-weight: 900;
+               mask: none!important;
+            }
+            &:hover, &:focus{
+               background: $theme-color;
+            }
+         }
+      }
+      .wp-travel-engine-vid-gal-popup{
+         .wte-trip-vidgal-popup-trigger{
+            font-size: 0;
+            color: transparent;
+            background: $theme-color-2;
+            &:before{
+               display: none;
+            }
+            &:after{
+               content: '\f03d';
+               font-family: 'Line Awesome Free' !important;
+               font-size: 20px;
+               line-height: 26px;
+               font-weight: 900;
+               color: #fff;
+               mask: none!important;
+            }
+            &:hover, &:focus{
+               background: $theme-color;
+            }
+         }
+      }
+   }
+}
+
+.banner-layout-5__wrap{
+   .trip-content-area{
+      max-width: 100%;
+      padding: 0;
+   }
+   .booking-single-gallery{
+      .swiper-content-inner{
+         margin: 0;
+      }
+      .init-carousel-swiper-theme{
+         padding: 0;
+      }
+      .swiper-nav-prev{
+         left: 15px!important;
+         width: 50px;
+         height: 50px;
+         @media(max-width: 1200px){
+            opacity: 1;
+         }
+      }
+      .swiper-nav-next{
+         right: 15px!important;
+         width: 50px;
+         height: 50px;
+         @media(max-width: 1200px){
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.wte-related-trips-wrapper{
+   margin: 50px 0 80px;
+   @media(max-width: 1024px){
+      margin-bottom: 50px;
+   }
+   .wte-related-trips__heading{
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      @media(max-width: 1024px){
+         font-size: 24px;
+      }
+   }
+}
+
+.tour-question{
+   text-align: center;
+   background: $white;
+   border: 1px solid $border-color;
+   border-radius: 10px;
+   padding: 28px 30px 30px;
+   @media(max-width: 1024px){
+      padding: 28px 15px 30px;
+   }
+   .icon{
+      font-size: 55px;
+      color: $theme-color;
+      line-height: 1;
+   }
+   .title{
+      font-size: 20px;
+      color: $headings-color;
+      font-weight: 600;
+      margin: 20px 0 6px;
+   }
+   .desc{
+      font-size: 15px;
+      margin-bottom: 25px;
+   }
+   .open-enquiry-message{
+      padding: 15px 25px 16px;
+      font-size: 15px;
+   }
+}
+
+@media(max-width: 560px){
+   .wpte-booking-area{
+      padding: 10px 15px 16px;
+   }
+   #wpte_price-toggle-btn-mb{
+      font-size: 14px;
+      white-space: nowrap;
+      .current-text{
+         font-size: 14px;
+      }
+   }
+}
+
+.gva-listing-rating-criteria{
+   margin-bottom: 45px;
+   .review-progress-wrapper{
+      padding-left: 100px;
+      margin-bottom: 40px;
+      position: relative;
+      .review__progress-label{
+         font-weight: 600;
+         color: $black;
+         float: left;
+         width: 95px;
+         position: absolute;
+         top: -15px;
+         left: 0;
+         text-transform: capitalize;
+      }
+      .review__progress {
+         background-color: $bg-gray;
+         position: relative;
+         overflow: visible;
+         z-index: 11;
+         .review__progress-bar{
+            @include transition(width 1s ease-in-out);
+            height: 8px;
+            background: $theme-color;
+            position: relative;
+            display: block;
+            width: 0;
+            border-radius: 6px;
+            .percentage{
+               position: absolute;
+               bottom: 100%;
+               left: 100%;
+               z-index: 1;
+               padding: 3px 6px;
+               background: $theme-color;
+               font-size: 12px;
+               color: $white;
+               margin-bottom: 5px;
+               line-height: 1;
+               &:after{
+                  content: "";
+                  border: 5px solid transparent;
+                  border-top-color: $theme-color;
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  z-index: 1;
+                  transform: rotate(-90deg);
+                  margin-top: -6px;
+               }
+               &.percentage-left{ 
+                  left: auto;
+                  right: 0;
+                  &:after{
+                     right: 0;
+                     left: auto;
+                     transform: rotate(90deg);
+                     margin-right: 2px;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .listing-total-reviews{
+      border-radius: 4px;
+      border: 1px solid $border-color;
+      > .content-inner{
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: space-between;
+         .reviews-left{
+            text-align: center;
+            -webkit-box-flex: 0;
+            flex: 0 0 30%;
+            max-width: 30%;
+            @media(max-width: 680px){
+               flex: 0 0 100%;
+               max-width: 100%;
+               padding: 20px 0;
+            }
+            .reviews-average{
+               .rating-score{
+                  font-size: 60px;
+                  color: $black;
+                  line-height: 1.2;
+                  span{
+                     font-size: 22px;
+                     color: $body-color;
+                  }
+               }
+               .vote-text{
+                  font-weight: 700;
+                  font-family: $headings-font-family;
+                  color: $theme-color;
+                  font-size: 18px;
+                  line-height: 1.1;
+               }
+               .vote-number{
+                  font-weight: 500;
+               }
+            }
+            .reviews-average-star{
+               margin-top: 5px;
+               .lt-review-show-start{
+                  justify-content: center;
+               }
+            }
+         }
+         .reviews-right{ 
+            -webkit-box-flex: 0;
+            flex: 0 0 70%;
+            max-width: 70%;
+            border-left: 1px solid $border-color;
+            @media(max-width: 680px){
+               flex: 0 0 100%;
+               max-width: 100%;
+               border-left: 0;
+               border-top: 1px solid $border-color;
+            }
+            .content-inner{
+               padding: 45px 40px; 
+               @media(max-width: 1024px){
+                  padding: 25px 15px;
+               }
+               .result-item{
+                  &:last-child{
+                     .review-progress-wrapper{
+                        margin-bottom: 0;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.modal-header .close{
+   margin: 0!important;
+}

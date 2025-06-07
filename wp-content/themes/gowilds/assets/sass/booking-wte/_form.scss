@@ -1,0 +1,232 @@
+.elementor-widget-wptravelengine-trip-search{
+	.wpte-trip-sfilter-wrapper{
+		background: #fff;
+	    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+	    border-radius: 8px;
+	    padding: 0;
+	    position: relative;
+	    z-index: 10;
+	    .wpte-trip__search-fields.horizontal{
+         @media(max-width: 910px){
+            flex-direction: column;
+         }
+	    	.wpte-trip__adv-field{
+	    		padding: 28px 30px 20px;
+	    		border: 0;
+	    		position: relative;
+            @media(max-width: 1200px){
+               padding: 26px 15px 18px;
+            }
+            @media(max-width: 910px){
+               border-radius: 0;
+               border-left: none!important;
+               border-top: 1px solid $border-color;
+               flex: 0 0 100%;
+               padding: 20px 12px 12px;
+               &:first-child{
+                  border-top: 0;
+               }
+            }
+	    		.icon{
+	    			right: 0px;
+               margin-top: 5px;
+	    			left: auto;
+               font-size: 32px;
+               @media(max-width: 1200px){
+                  right: 2px;
+                  font-size: 28px;
+               }
+               .ticon-trip{
+                  font-size: 26px;
+               }
+               .ticon-calendar{
+                  font-size: 22px;
+               }
+	    		}
+	    		input {
+				   min-width: auto;
+				   width: 100%;
+				   height: auto;
+				   min-height: auto;
+				   color: #27333F;
+				   font-size: 16px;
+				   font-style: normal;
+				   font-weight: 600;
+				   line-height: 150%;
+				   border: 0;
+				   padding: 0!important;
+				   box-shadow: none;
+				   background: transparent;
+				}
+				&.wpte__select-field::after{
+					content: none;
+				}
+				+ .wpte-trip__adv-field {
+					border-left: 1px solid #DFDFDF;
+					@media(max-width: 767px){
+						border-left: 0;
+						border-top: 1px solid #DFDFDF;
+					}
+				}
+				&:not(:last-child){
+					margin-bottom: 0;
+				}
+	    	}
+	    	.title_field{
+	    		font-size: 14px;
+			   font-weight: 500;
+			   color: $body-color;
+            line-height: 16px;
+	    	}
+         .wpte-trip__submit-field{
+            button{
+               font-weight: 600;
+               &:hover, &:focus{
+                  background: $theme-color-2;
+               }
+            }
+         }
+	   }
+	}
+}
+
+.elementor-widget-wptravelengine-trip-search{
+   .wpte-trip-sfilter-wrapper{
+      background: #fff;
+       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+       border-radius: 8px;
+       padding: 0;
+       position: relative;
+       z-index: 10;
+       .wpte-trip__search-fields:not(.horizontal){
+         padding: 10px 30px 30px;
+         .wpte-trip__adv-field{
+            padding: 20px 0 18px;
+            border: 0;
+            border-top: 1px solid #DFDFDF;
+            position: relative;
+            flex: 0 0 100%;
+            border-radius: 0;
+            &:first-child{
+               border-top: 0!important;
+            }
+            @media(max-width: 1200px){
+               padding: 26px 15px 18px;
+            }
+            @media(max-width: 910px){
+               padding: 20px 12px 12px;
+            }
+            .icon{
+               right: 20px;
+               left: auto;
+               font-size: 24px;
+               @media(max-width: 1200px){
+                  right: 2px;
+                  font-size: 18px;
+               }
+               .ticon-trip{
+                  font-size: 26px;
+               }
+               .ticon-calendar{
+                  font-size: 22px;
+               }
+            }
+            input {
+               min-width: auto;
+               width: 100%;
+               height: auto;
+               min-height: auto;
+               color: #27333F;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 150%;
+               border: 0;
+               padding: 0px;
+               box-shadow: none;
+               background: transparent;
+            }
+            &.wpte__select-field::after{
+               content: none;
+            }
+            &:not(:last-child){
+               margin-bottom: 0;
+            }
+         }
+         .title_field{
+            font-size: 14px;
+            font-weight: 500;
+            color: $body-color;
+            line-height: 16px;
+         }
+         .wpte-trip__submit-field{
+            button{
+               font-weight: 700;
+               &:hover, &:focus{
+                  background: $theme-color-2;
+               }
+            }
+         }
+      }
+   }
+}
+
+.wrapper--style, .wte_enquiry_contact_form, .comment-respond{
+   background: none;
+   padding: 0;
+}
+.wte-trip-options .wte-trip-guest-wrapper .select-wrapper .wte-qty-number input{
+   padding: 0!important;
+}
+
+.wpte-material-ui-input-control{
+   > label{
+      position: static;
+      color: $headings-color!important;
+      font-size: 15px!important;
+      font-weight: 600;
+      transform: none;
+      max-width: 100%!important;
+   }
+   fieldset{
+      display: none;
+   }
+   input, select, textarea{
+      border: 1px solid $border-color!important;
+      &::-webkit-input-placeholder { 
+         color: $body-color;
+      } 
+      &::-moz-placeholder {
+         color: $body-color;
+         opacity: 1;
+         font-size: 14px;
+      }
+      &:-ms-input-placeholder { 
+         color: $body-color;
+         opacity: 1;
+         font-size: 14px;
+      }
+      &:-moz-placeholder { 
+         color: $body-color;
+         opacity: 1;
+         font-size: 14px;
+      }
+   }
+}
+
+.wpte-checkout__box{
+   .wpte-checkout__form-submit{
+      text-align: center;
+      margin-bottom: 30px;
+      button{
+         text-transform: none!important;
+         width: auto;
+         padding: 15px 50px!important;
+         transition: all 0.35s;
+         display: inline-block;
+         &:hover{
+            padding: 15px 65px!important;
+         }
+      }
+   }
+}

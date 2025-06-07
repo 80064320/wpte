@@ -1,0 +1,14 @@
+.gowilds-icon-theme{
+   width: 28px;
+   height: 24px;
+   position: relative;
+   background: url("images/icon-theme.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+} 
+
+.elementor-element-wrapper.elementor-element--promotion{
+   display: none;
+}
+
